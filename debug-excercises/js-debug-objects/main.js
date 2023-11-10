@@ -50,13 +50,13 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'Diesel'
+        type: 'Diesel' // 3. Disel andrebbe senza maisucola
     },
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    } // 1. Manca una virgola qui
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,14 +64,14 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina'); // 2. dobbiamo scrivere =>
 
 const dieselCars = cars.filter( (auto) => {
     auto.type === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type !== 'benzina' || auto.type !== 'diesel'; //4. dovremmo usare un && // 5. dovremmo usare delle parentesi // possiamo non usare il return
 });
 
 console.log('Auto a benzina');
