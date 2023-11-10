@@ -18,11 +18,12 @@ for (let i = 0; i > 5; i++) {  //i deve essere minore di 5, i < 5, altrimenti no
 
 // ESERCIZIO 2
 function addIfEven(num) { // 
-    if (num % 2 = 0) { // l'operatore = assegna un valore, bisogna inserire === o == per confrontare
+    if (num % 2 === 0) { // l'operatore = assegna un valore, bisogna inserire === o == per confrontare
         return num + 5;
     }
     return num;
 }
+console.log(addIfEven(1));
 
 
 // ESERCIZIO 3
@@ -39,9 +40,9 @@ function displayEvenNumbers() {
     let evenNumbers = [];
     for (let i = 0; i < numbers.length - 1; i++;) { // 1. non va inserita l'ultima ; // 2. va usato <= oppure i < numbers.lenght
         if (numbers % 2 = 0); { // 3. non va usato = ma === // 4. va usatp numbers[i] invece di numbers // 5. non va inserita la ;
-            evenNumbers.push(i);
+            evenNumbers.push(i); // 7- tra parentesi numbers[i]
         }
         return evenNumbers; //6. il return va fuori dal ciclo for
     }
 }
-displayEvenNumbers(); // dovrebbe restituire [2,4,6,8] // 7.la funzione ritorna un array quindi va assehnata ad una variabile
+displayEvenNumbers(); // dovrebbe restituire [2,4,6,8] // 8.la funzione ritorna un array quindi va assegnata ad una variabile

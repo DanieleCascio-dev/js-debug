@@ -27,7 +27,7 @@ checkAge();
 // ESERCIZIO 2
 function printColorsNumber() {
   const colors = ["blue", "red", "yellow", "green", "black"];
-  console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+  console.log(`Nella mia palette ci sono ${colors.lenght} colori!`); //length
 }
 printColorsNumber();
 // Questa funzione stampa Nella mia palette ci sono 5 colori!

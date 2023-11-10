@@ -3,7 +3,7 @@ const array = []; //dovrebbe essere [] invece che null
 
 input.addEventListener("keypress", function (event) {
   if (event.code != "Enter") return;
-  if (input.value.length == "") return;
+  if (input.value.length == "") return; // il valore deve essere 0
 
   array.push(input.value); // Dobbbiamo usare push !array.add(input.value);!
 
@@ -12,9 +12,9 @@ input.addEventListener("keypress", function (event) {
   li.textContent = input.value; // dobbiamo usare textContent non text
   document.querySelector("ul").append(li); // dobbiamo usare append non push
 
-  let counter = "";
+  let counter = ""; // deve essere un numero
   let item = array[0];
-  const max = 1;
+  const max = 1; //deve essere let
   const elems = [];
 
   for (let i = 0; i < array.length; i++) {
@@ -33,7 +33,7 @@ input.addEventListener("keypress", function (event) {
       if (array[i] == array[j]) {
         counter++;
         if (max < counter) max = counter; // mancano le parentesi {}
-        item = array[i]; //dovremmo usare push
+        item = array[i];
       }
     }
 
@@ -48,5 +48,5 @@ input.addEventListener("keypress", function (event) {
   alert.querySelector("span:first-child").innerText = item;
   alert.querySelector("span:last-child").innerText = max;
 
-  console.log("${item} trovato ${max} volte");
+  console.log("${item} trovato ${max} volte"); //Usare backtip ``
 });
