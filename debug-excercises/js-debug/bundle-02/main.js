@@ -9,37 +9,38 @@
 ​
 *******************************************************************************/
 
-
-// ESERCIZIO 1
+// // ESERCIZIO 1
 function checkAge() {
-    const myAge = 32;
-    const message = '';
+  const myAge = 32;
+  const message = "";
 
-    if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
-    } else {
-        message = 'Hai più di 18 anni!';
-    }
+  if (myAge < 18) {
+    message = `Sei troppo giovane! Hai ${myAge} anni!`;
+  } else {
+    message = "Hai più di 18 anni!";
+  }
 }
 checkAge();
 
+// Questa funzione dovrebbe fare un check per controllare se il numero inserito è maggiore o minore di 18 MA non prende nessun valore in ingresso e non ritorna alcun valore, la variabile messagge deve essere un let e non un const altrimenti non può essere modificata. Ad ogni mdodo manca un return.
+
 // ESERCIZIO 2
 function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+  const colors = ["blue", "red", "yellow", "green", "black"];
+  console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
 }
 printColorsNumber();
-
+// Questa funzione stampa Nella mia palette ci sono 5 colori!
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
+  const userNumber = prompt("Inserisci un numero");
+  const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
+  console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
-
+// dobbiamo usare parseInt nel prompt per avere un numero e non una stringa altrimenti farà una concatenazione di stringhe es: se insersisco 2 il risultato sarà 212. sarebbe meglio usare un let total = 0, e poi total += userNumber + 12
 
 // ESERCIZIO 4
 function checkAccess() {
@@ -60,6 +61,8 @@ function checkAccess() {
 }
 checkAccess();
 
+//GrantAcces ha valore di una stringa e non booleano, andrebbe settato let grantAccess = false; 
+// nel primo if stiamo settando un nuovo valore di string
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 function checkAccessImproved() {
@@ -88,32 +91,4 @@ function checkAccessImproved() {
         }
     }
     checkAccessImproved();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Mnaca la graffa di chiusura finale e grantAccess va settato come valore booleano
